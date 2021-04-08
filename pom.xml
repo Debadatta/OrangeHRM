@@ -138,7 +138,7 @@
 			<plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>3.15.0</version>
+				<version>5.5.2</version>
 				<executions>
 					<execution>
 						<id>execution</id>
@@ -147,7 +147,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>MyProjectName</projectName>  <!-- Replace with project name -->
+							<projectName>OrangeHRM</projectName>  <!-- Replace with project name -->
 							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
 							<cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
 							<buildNumber>1</buildNumber>

@@ -30,51 +30,11 @@ import runners.NewTestRunner;
 
 public class StepDefinitions extends NewTestRunner {
 	public static final String WebsiteUrl = "https://opensource-demo.orangehrmlive.com/"; 
-    //public static final String WebsiteUrl = "https://opensource-demo.orangehrmlive.com/"; 
-	private static final String CHROME_VERSION = "89.0.4389.114";
-	public WebDriver driver;
 
-	/**
-	* This function will execute before each Test tag in testng.xml
-	* @param browser
-	* @throws Exception
-	*/
-//	@Before
-//	@Parameters("browser")
-//	public void setup(String browser) throws Exception {
-//		DOMConfigurator.configure("log4j.xml");
-//		Log.startTestCase("Selenium_Test_001");
-//		if(browser.equalsIgnoreCase("firefox")){			
-//			WebDriverManager.firefoxdriver().setup();			
-//			driver = new FirefoxDriver(); 
-//		} else if(browser.equalsIgnoreCase("chrome")) {			
-//			ChromeOptions options = new ChromeOptions();
-//			WebDriverManager.chromedriver().browserVersion(CHROME_VERSION).setup();
-//			options.addArguments("start-maximized"); 
-//			options.addArguments("enable-automation"); 
-//			options.addArguments("--no-sandbox"); 
-//			options.addArguments("--disable-infobars");
-//			options.addArguments("--disable-dev-shm-usage");
-//			options.addArguments("--disable-browser-side-navigation"); 
-//			options.addArguments("--disable-gpu"); 
-//			driver = new ChromeDriver(options); 
-//		}
-//	}
 	
-	
-
 	@Given("^User navigates to the website OrangeHRM$")
 	public void user_navigates_to_the_website_OrangeHRM() throws Throwable {		
-		ChromeOptions options = new ChromeOptions();
-		WebDriverManager.chromedriver().browserVersion(CHROME_VERSION).setup();
-		options.addArguments("start-maximized"); 
-		options.addArguments("enable-automation"); 
-		options.addArguments("--no-sandbox"); 
-		options.addArguments("--disable-infobars");
-		options.addArguments("--disable-dev-shm-usage");
-		options.addArguments("--disable-browser-side-navigation"); 
-		options.addArguments("--disable-gpu"); 
-		driver = new ChromeDriver(options); 
+		
 		driver.get(WebsiteUrl);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();

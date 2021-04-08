@@ -1,8 +1,5 @@
 package runners;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,7 +22,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 @CucumberOptions(
-        features = "src/main/java/Features",
+        features = "src/test/java/Features",
         glue = {"StepDefinitions"},
         tags = {"@smoke"},
         format = {
@@ -36,20 +33,37 @@ import io.github.bonigarcia.wdm.WebDriverManager;
         },plugin = "json:target/cucumber-reports/CucumberTestReport.json")
 
 public class NewTestRunner {
-	
+	protected static WebDriver driver=null;
 	private TestNGCucumberRunner testNGCucumberRunner;
 	 
     @BeforeClass(alwaysRun = true)
-    public void setUpClass() throws Exception {
-        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
+    @Parameters({"browser", "version"})
+    public void setUpClass(String browser, String version) throws Exception {
+    	if(browser.equalsIgnoreCase("firefox")) {
+    		
+    		WebDriverManager.firefoxdriver().browserVersion(version).setup();
+    		driver = new FirefoxDriver();
+    		
+    	} else if(browser.equalsIgnoreCase("chrome")) {
+    		
+	    	ChromeOptions options = new ChromeOptions();
+			WebDriverManager.chromedriver().browserVersion(version).setup();
+			options.addArguments("start-maximized"); 
+			options.addArguments("enable-automation"); 
+			options.addArguments("--no-sandbox"); 
+			options.addArguments("--disable-infobars");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--disable-browser-side-navigation"); 
+			options.addArguments("--disable-gpu"); 
+			driver = new ChromeDriver(options); 
+	        
+        } else {
+        	
+			throw new Exception("Browser is not correct");
+		}
+    	testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     }
-    
-    @BeforeMethod(alwaysRun = true)
-    //@parameters()
-    public void setUpTestngClass() throws Exception {
         
-    }
-    
  
     @Test(groups = "cucumber", description = "Runs Cucumber Feature", dataProvider = "features")
     public void feature(CucumberFeatureWrapper cucumberFeature) {
