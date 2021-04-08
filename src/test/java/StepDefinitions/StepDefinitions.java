@@ -4,31 +4,17 @@ import java.util.concurrent.TimeUnit;
 
 import Lib.Log;
 
-import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 import Pages.AssignLeave;
 import Pages.DashboardPage;
 import Pages.LoginPage;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import runners.NewTestRunner;
+import runners.TestRunner;
 
-public class StepDefinitions extends NewTestRunner {
+public class StepDefinitions extends TestRunner {
 	public static final String WebsiteUrl = "https://opensource-demo.orangehrmlive.com/"; 
 
 	
@@ -38,19 +24,17 @@ public class StepDefinitions extends NewTestRunner {
 		driver.get(WebsiteUrl);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-
+        Log.info("User navigated to OrangeHRM application.");
 	}
 
 	@When("^User enter valid Username as \"(.*?)\" and Password as \"(.*?)\"$")
 	public void user_enter_valid_Username_and_Password(String username, String password) throws Throwable {
-	    Thread.sleep(5000);
 	    LoginPage loginPage = new LoginPage(driver);
 	    loginPage.loginWithUsernameAndPassword(username, password);
 	}
 	
 	@When("^User enter valid Username and Password$")
 	public void user_enter_valid_Username_and_Password() throws Throwable {
-	    Thread.sleep(5000);
 	    LoginPage loginPage = new LoginPage(driver);
 	    loginPage.loginWithUsernameAndPassword("Admin", "admin123");
 	}
@@ -63,7 +47,6 @@ public class StepDefinitions extends NewTestRunner {
 
 	@Then("^User should be able to redirect to Dashboard page$")
 	public void user_should_be_able_to_redirect_to_Dashboard_page() throws Throwable {
-		Thread.sleep(5000);
 	   DashboardPage dashboard = new DashboardPage(driver);
 	   Assert.assertTrue(dashboard.findDashboardLabel().contains("Dashboard"));
 

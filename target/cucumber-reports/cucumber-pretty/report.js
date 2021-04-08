@@ -107,7 +107,7 @@ formatter.match({
   "location": "StepDefinitions.user_navigates_to_the_website_OrangeHRM()"
 });
 formatter.result({
-  "duration": 18304043100,
+  "duration": 8792333800,
   "status": "passed"
 });
 formatter.match({
@@ -124,21 +124,21 @@ formatter.match({
   "location": "StepDefinitions.user_enter_valid_Username_and_Password(String,String)"
 });
 formatter.result({
-  "duration": 8761987899,
+  "duration": 786947300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.user_clicks_the_LOGIN_button()"
 });
 formatter.result({
-  "duration": 9204544101,
+  "duration": 16823280600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinitions.user_should_be_able_to_redirect_to_Dashboard_page()"
 });
 formatter.result({
-  "duration": 5101800899,
+  "duration": 5210036900,
   "status": "passed"
 });
 });
