@@ -1,18 +1,16 @@
 package StepDefinitions;
 
 import java.util.concurrent.TimeUnit;
-
-import Lib.Log;
-
 import org.testng.Assert;
-
-import Pages.AssignLeave;
-import Pages.DashboardPage;
-import Pages.LoginPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import runners.TestRunner;
+
+import Pages.AssignLeave;
+import Pages.DashboardPage;
+import Pages.LoginPage;
+import Lib.Log;
 
 public class StepDefinitions extends TestRunner {
 	public static final String WebsiteUrl = "https://opensource-demo.orangehrmlive.com/"; 
@@ -30,14 +28,20 @@ public class StepDefinitions extends TestRunner {
 	@When("^User enter valid Username as \"(.*?)\" and Password as \"(.*?)\"$")
 	public void user_enter_valid_Username_and_Password(String username, String password) throws Throwable {
 	    LoginPage loginPage = new LoginPage(driver);
-	    loginPage.loginWithUsernameAndPassword(username, password);
+	    //loginPage.loginWithUsernameAndPassword(username, password);
 	}
 	
 	@When("^User enter valid Username and Password$")
 	public void user_enter_valid_Username_and_Password() throws Throwable {
-	    LoginPage loginPage = new LoginPage(driver);
-	    loginPage.loginWithUsernameAndPassword("Admin", "admin123");
+	    LoginPage loginPage = new LoginPage(driver);	    
+	    loginPage.loginWithUsernameAndPassword();
 	}
+	@When("^User enter invalid Username and Password$")
+	public void user_enter_invalid_Username_and_Password() throws Throwable {
+	    LoginPage loginPage = new LoginPage(driver);
+	    loginPage.loginWithInvalidUsernameAndPassword();
+	}
+	
 
 	@When("^User clicks the LOGIN button$")
 	public void user_clicks_the_LOGIN_button() throws Throwable {
@@ -229,6 +233,10 @@ public class StepDefinitions extends TestRunner {
 	    
 	}
 
+	@Then("^Close the browser$")
+	 public void close_the_browser(){
+		 driver.quit();
+	 }
 	
 	
 }

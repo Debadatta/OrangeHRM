@@ -2,9 +2,11 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 import Lib.Log;
 import Lib.Util;
+import Lib.DataProviderForLogin;
 
 public class LoginPage {
 	
@@ -39,10 +41,27 @@ public class LoginPage {
     	}
     }
     
-    public void loginWithUsernameAndPassword(String username, String password) {
-    	this.setUserName(username);
-    	this.setPassword(password);
+    
+//    @Test(dataProviderClass = DataProviderForLogin.class, dataProvider = "getLoginData")
+//    public void loginWithUsernameAndPassword(String username, String password) {
+//    	this.setUserName(username);
+//    	this.setPassword(password);
+//    }
+    
+    //@Test(dataProviderClass = DataProviderForLogin.class, dataProvider = "getLoginData")
+    public void loginWithUsernameAndPassword() {
+    	DataProviderForLogin data = new DataProviderForLogin();
+    	this.setUserName(data.getUsername());
+    	this.setPassword(data.getPassword());
     }
+    
+    public void loginWithInvalidUsernameAndPassword() {
+    	DataProviderForLogin data = new DataProviderForLogin();
+    	this.setUserName(data.getInvalidUsername());
+    	this.setPassword(data.getInvalidPassword());
+    }
+    
+    
 
 	public void clickLoginButton() {
 		try {    		

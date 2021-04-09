@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="54.248" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="38.046" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire2835214128953226729\surefirebooter17943101195985261034.jar C:\Users\user\AppData\Local\Temp\surefire2835214128953226729 2021-04-08T21-00-58_915-jvmRun1 surefire11062880681542442373tmp surefire_013980266714311179619tmp"/>
+    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire815972898299896336\surefirebooter1291336493383974065.jar C:\Users\user\AppData\Local\Temp\surefire815972898299896336 2021-04-09T15-15-58_614-jvmRun1 surefire16173345033583619256tmp surefire_08488211433267022389tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Project\Automation\OrangeHRM\target\test-classes;D:\Project\Automation\OrangeHRM\target\classes;C:\Users\user\.m2\repository\org\testng\testng\6.8\testng-6.8.jar;C:\Users\user\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\user\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\user\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\user\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\user\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-java\2.45.0\selenium-java-2.45.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.45.0\selenium-chrome-driver-2.45.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.45.0\selenium-remote-driver-2.45.0.jar;C:\Users\user\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-api\2.45.0\selenium-api-2.45.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.45.0\selenium-htmlunit-driver-2.45.0.jar;C:\Users\user\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.15\htmlunit-2.15.jar;C:\Users\user\.m2\repository\xalan\xalan\2.7.1\xalan-2.7.1.jar;C:\Users\user\.m2\repository\xalan\serializer\2.7.1\serializer-2.7.1.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpmime\4.3.3\httpmime-4.3.3.jar;C:\Users\user\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.15\htmlunit-core-js-2.15.jar;C:\Users\user\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\user\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\user\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.21\nekohtml-1.9.21.jar;C:\Users\user\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.14\cssparser-0.9.14.jar;C:\Users\user\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\user\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\user\.m2\repository\org\eclipse\jetty\jetty-websocket\8.1.15.v20140411\jetty-websocket-8.1.15.v20140411.jar;C:\Users\user\.m2\repository\org\eclipse\jetty\jetty-util\8.1.15.v20140411\jetty-util-8.1.15.v20140411.jar;C:\Users\user\.m2\repository\org\eclipse\jetty\jetty-io\8.1.15.v20140411\jetty-io-8.1.15.v20140411.jar;C:\Users\user\.m2\repository\org\eclipse\jetty\jetty-http\8.1.15.v20140411\jetty-http-8.1.15.v20140411.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpclient\4.3.6\httpclient-4.3.6.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\httpcore\4.3.3\httpcore-4.3.3.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.45.0\selenium-firefox-driver-2.45.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.45.0\selenium-ie-driver-2.45.0.jar;C:\Users\user\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\user\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.45.0\selenium-safari-driver-2.45.0.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-support\2.45.0\selenium-support-2.45.0.jar;C:\Users\user\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\user\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\user\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.45.0\selenium-leg-rc-2.45.0.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-java\1.2.2\cucumber-java-1.2.2.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-core\1.2.2\cucumber-core-1.2.2.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\user\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-junit\1.2.2\cucumber-junit-1.2.2.jar;C:\Users\user\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\user\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\user\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\user\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\user\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\user\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\user\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\user\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\user\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.0\webdrivermanager-4.4.0.jar;C:\Users\user\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\user\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\user\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\user\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\user\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\user\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\user\.m2\repository\info\cukes\cucumber-testng\1.2.5\cucumber-testng-1.2.5.jar;C:\Users\user\.m2\repository\net\masterthought\cucumber-reporting\3.8.0\cucumber-reporting-3.8.0.jar;C:\Users\user\.m2\repository\org\apache\logging\log4j\log4j-api\2.6\log4j-api-2.6.jar;C:\Users\user\.m2\repository\org\apache\logging\log4j\log4j-core\2.6\log4j-core-2.6.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.8.5\jackson-databind-2.8.5.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.8.0\jackson-annotations-2.8.0.jar;C:\Users\user\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.8.5\jackson-core-2.8.5.jar;C:\Users\user\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\user\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\user\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\user\.m2\repository\velocity-tools\velocity-tools\1.4\velocity-tools-1.4.jar;C:\Users\user\.m2\repository\joda-time\joda-time\2.9.6\joda-time-2.9.6.jar;C:\Users\user\.m2\repository\net\lingala\zip4j\zip4j\1.3.2\zip4j-1.3.2.jar;C:\Users\user\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.24\plexus-utils-3.0.24.jar;C:\Users\user\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20160924.1\owasp-java-html-sanitizer-20160924.1.jar;C:\Users\user\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\user\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\user\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire2835214128953226729\surefirebooter17943101195985261034.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire815972898299896336\surefirebooter1291336493383974065.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.1+13-LTS"/>
@@ -60,5 +60,61 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="feature" classname="runners.NewTestRunner" time="31.798"/>
+  <testcase name="feature" classname="runners.TestRunner" time="20.541">
+    <failure message="org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;&#10;System info: host: &apos;DESKTOP-L12U9K0&apos;, ip: &apos;192.168.43.91&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-L12U9K0', ip: '192.168.43.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at runners.TestRunner.feature(TestRunner.java:71)
+Caused by: org.openqa.selenium.remote.SessionNotFoundException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-L12U9K0', ip: '192.168.43.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: driver.version: RemoteWebDriver
+</failure>
+    <system-out><![CDATA[@smoke
+Feature: Login Feature
+D:\Project\Automation\OrangeHRM\src\test\resources\TestData.xls
+Login
+org.apache.poi.hssf.usermodel.HSSFRow@4519f676
+org.apache.poi.hssf.usermodel.HSSFRow@1290ed28
+
+  Scenario: User can able to login with valid login credentials &amp#27;[90m# Login.feature:4&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser navigates to the website OrangeHRM&amp#27;[0m               &amp#27;[90m# StepDefinitions.user_navigates_to_the_website_OrangeHRM()&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enter valid Username and Password&amp#27;[0m                 &amp#27;[90m# StepDefinitions.user_enter_valid_Username_and_Password()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser clicks the LOGIN button&amp#27;[0m                            &amp#27;[90m# StepDefinitions.user_clicks_the_LOGIN_button()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should be able to redirect to Dashboard page&amp#27;[0m      &amp#27;[90m# StepDefinitions.user_should_be_able_to_redirect_to_Dashboard_page()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mClose the browser&amp#27;[0m                                      &amp#27;[90m# StepDefinitions.close_the_browser()&amp#27;[0m
+
+  Scenario: User can unable to login with invalid login credentials &amp#27;[90m# Login.feature:12&amp#27;[0m
+    &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mUser navigates to the website OrangeHRM&amp#27;[0m                   &amp#27;[90m# StepDefinitions.user_navigates_to_the_website_OrangeHRM()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+      Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+      System info: host: 'DESKTOP-L12U9K0', ip: '192.168.43.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+      Driver info: driver.version: RemoteWebDriver
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:66)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+      	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
+      	at StepDefinitions.StepDefinitions.user_navigates_to_the_website_OrangeHRM(StepDefinitions.java:22)
+      	at ?.Given User navigates to the website OrangeHRM(Login.feature:14)
+      &amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enter invalid Username and Password&amp#27;[0m                   &amp#27;[90m# StepDefinitions.user_enter_invalid_Username_and_Password()&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks the LOGIN button&amp#27;[0m                                &amp#27;[90m# StepDefinitions.user_clicks_the_LOGIN_button()&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get the error message as "&amp#27;[0m&amp#27;[36m&amp#27;[1mInvalid credentials&amp#27;[0m&amp#27;[36m"&amp#27;[0m &amp#27;[90m# StepDefinitions.user_should_get_the_error_message_as(String)&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser should not able to redirect to Dashboard page&amp#27;[0m          &amp#27;[90m# StepDefinitions.user_should_not_able_to_redirect_to_Dashboard_page()&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mClose the browser&amp#27;[0m                                          &amp#27;[90m# StepDefinitions.close_the_browser()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN Continuable parsing error 5 and column 84
+log4j:WARN Attribute "xmlns:log4j" with value "https://jakarta.apache.org/log4j/" must have a value of "http://jakarta.apache.org/log4j/".
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 13865
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+  </testcase>
 </testsuite>

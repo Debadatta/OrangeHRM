@@ -6,7 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -32,14 +34,14 @@ public class TestRunner {
 	protected static WebDriver driver=null;
 	private TestNGCucumberRunner testNGCucumberRunner;
 	 
-    @BeforeClass(alwaysRun = true)
+    @BeforeTest(alwaysRun = true)
     @Parameters({"browser", "version"})
     public void setUpClass(String browser, String version) throws Exception {
     	DOMConfigurator.configure("log4j.xml");    	 
     	 Log.startTestCase("Selenium_Test_001");
     	if(browser.equalsIgnoreCase("firefox")) {
     		
-    		WebDriverManager.firefoxdriver().browserVersion(version).setup();
+    		WebDriverManager.firefoxdriver().setup();
     		driver = new FirefoxDriver();
     		Log.info("Firefox Browser started.");
     		
@@ -77,6 +79,7 @@ public class TestRunner {
     @AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {
     	Log.endTestCase("Selenium_Test_001");
-        testNGCucumberRunner.finish();
+        //testNGCucumberRunner.finish();
+        //driver.close();
     }
 }

@@ -2,8 +2,9 @@ D:\Project\Automation\OrangeHRM\src\test\java\Lib\Log.java
 D:\Project\Automation\OrangeHRM\src\test\java\Lib\Hooks.java
 D:\Project\Automation\OrangeHRM\src\test\java\runners\TestRunner.java
 D:\Project\Automation\OrangeHRM\src\test\java\Pages\AssignLeave.java
-D:\Project\Automation\OrangeHRM\src\test\java\runners\NewTestRunner.java
+D:\Project\Automation\OrangeHRM\src\test\java\Lib\DataProviderForLogin.java
 D:\Project\Automation\OrangeHRM\src\test\java\Pages\DashboardPage.java
 D:\Project\Automation\OrangeHRM\src\test\java\Lib\Util.java
 D:\Project\Automation\OrangeHRM\src\test\java\Pages\LoginPage.java
+D:\Project\Automation\OrangeHRM\src\test\java\Lib\ReadExcel.java
 D:\Project\Automation\OrangeHRM\src\test\java\StepDefinitions\StepDefinitions.java
